@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7f7f8;
+    padding: 2rem 1.5rem;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background: #e6e6ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+
+.head-text h1 {
+    color: #111;
+}
+
+.role {
+    color: #2c2c2e;
+}
+
+.location {
+    color: #5e5e62;
+}
+
+.block {
+    margin-top: 2.2rem;
+    padding-top: 1.8rem;
+    border-top: 1px solid #e0e0e5; 
+}
+
+.block h2 {
+    color: #5a5a5f;
+    margin-bottom: 1rem;
+}
+
+.block p:last-child {
+    margin-bottom: 0;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 0.65rem;
+    list-style: none;
+    padding: 0;
+}
+
+.tags li {
+    background: #eaeaf0;
+    padding: 0.2rem 0.9rem;
+    border-radius: 30px;
+    color: #1e1e1e;
+    border: 1px solid #dcdce0;
+}
+
+
+.job {
+    margin-bottom: 0.9rem;
+}
+
+.job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.15rem 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.job-title {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #111;
+}
+
+.job-date {
+    font-size: 0.9rem;
+    color: #5e5e62;
+    white-space: nowrap;
+}
+
+.job ul {
+    padding-left: 1.4rem;
+    margin-top: 0.2rem;
+    color: #2a2a2c;
+}
+
+.job p {
+    color: #2a2a2c;
+}
+
+.highlights {
+    margin: 0.4rem 0 0;
+    padding-left: 1.4rem;
+    color: #2c2c2e;
+}
+
+.plain {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.contacts li span {
+    min-width: 70px;
+    color: #5a5a5f;
+}
+
+.contacts a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+
+/* --- Top navigation buttons (top-right of header) --- */
+.topnav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 0 0 0 auto;
+    align-self: flex-start;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 0.5rem 1.15rem;
+    border-radius: 8px;
+    background: #fff;
+    color: #1a1a1a;
+    border: 1px solid #c9c9cf;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.nav-btn:hover {
+    background: #1e1e1e;
+    color: #fff;
+    border-color: #1e1e1e;
+}
+
+/* --- Back link on sub-pages --- */
+.back-link {
+    display: inline-block;
+    margin-bottom: 1.4rem;
+    color: #5a5a5f;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.back-link:hover {
+    color: #1a1a1a;
+}
+
+/* --- Data tables --- */
+.table-wrap {
+    overflow-x: auto;
+}
+
+.stat-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.stat-table th,
+.stat-table td {
+    text-align: left;
+    padding: 0.55rem 0.7rem;
+    border-bottom: 1px solid #e0e0e5;
+    vertical-align: top;
+}
+
+.stat-table th {
+    color: #5a5a5f;
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+}
+
+.stat-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.stat-table td.num,
+.stat-table th.num {
+    text-align: right;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.stat-table .rank-1 {
+    font-weight: 600;
+    color: #111;
+}
+
+/* --- Placement badge --- */
+.place {
+    display: inline-block;
+    min-width: 3rem;
+    text-align: center;
+    padding: 0.12rem 0.45rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: #eaeaf0;
+    color: #3a3a3e;
+}
+
+.place.gold {
+    background: #f3e3b3;
+    color: #6b520f;
+}
+
+.place.silver {
+    background: #e2e2e8;
+    color: #45454c;
+}
+
+.place.bronze {
+    background: #efd8c1;
+    color: #7a4a1e;
+}
+
+/* --- Hero cards --- */
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 0.9rem;
+}
+
+.hero-card {
+    border: 1px solid #dcdce0;
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    background: #fff;
+}
+
+.hero-card h3 {
+    color: #111;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-card .wr {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.1;
+}
+
+.hero-card .wr span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #5e5e62;
+}
+
+.hero-card p {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: #5e5e62;
+}
+
+.note {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #5e5e62;
+}
+
+.note a {
+    color: #1a1a1a;
+}
